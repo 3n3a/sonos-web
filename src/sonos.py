@@ -5,7 +5,9 @@ class Sonos:
         self.discovered_zones = []
 
     def update_discovered_zones(self) -> None:
-        self.discovered_zones = list(discover())
+        discovered = discover()
+        if discovered:
+            self.discovered_zones = list(discovered)
 
     def get_zone_by_uid(self, uid):
         self.update_discovered_zones()
