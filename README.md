@@ -8,7 +8,7 @@
 * Ability to Control Speakers / Zones
 * Can Play from URLs (MP3, WAV, etc.)
 
-## Developmen
+## Development
 
 ### Auth
 
@@ -25,10 +25,21 @@ With the following command:
 python main.py
 ```
 
+### Build as Native App
+
+Will build the Script into a native binary in subfolder `dist/sonoscontroller`, with PyInstaller.
+
+```sh
+python3 -m pip install -r requirements.txt
+python3 build.py
+```
+
 ### Technologies
 
 * NiceGUI
 * SoCo
+* PyWebView
+* PyInstaller
 
 ### Links
 

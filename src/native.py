@@ -16,4 +16,8 @@ logout.create()
 index.create()
 sonos.create()
 
-ui.run()
+app.native.window_args['resizable'] = True
+app.native.start_args['debug'] = False
+
+# ui.run()
+ui.run(native=True, window_size=(1024, 786), fullscreen=False, reload=False)
