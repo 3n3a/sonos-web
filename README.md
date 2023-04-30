@@ -37,3 +37,4 @@ python main.py
 * [NiceGUI - Docs](https://nicegui.io/documentation)
 * [NiceGUI - Possible Icons](https://fonts.google.com/icons?icon.set=Material+Icons)
 * [TailwindCSS - in NiceGUI available](https://tailwindcss.com/docs/)
+* [Pywebview - Docs](https://pywebview.flowrl.com/guide/installation.html#dependencies)
