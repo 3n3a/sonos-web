@@ -106,8 +106,9 @@ def create():
                             mute_unmute(device)
 
                     with ui.row():
-                        with ui.card().classes('absolute-center'):
-                            url = ui.input('Song Url')
-                            ui.button('Play Song', on_click=lambda: play_song_url(url.value, device))
+                        with ui.column():
+                            with ui.card().classes(''):
+                                url = ui.input('Song Url')
+                                ui.button('Play Song', on_click=lambda: play_song_url(url.value, device))
                 else:
                     ui.label('Device not found')

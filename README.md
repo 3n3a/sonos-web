@@ -22,14 +22,20 @@ Default Creds:
 With the following command:
 
 ```sh
+python3 -m venv venv
+source ./venv/bin/activate
 python main.py
 ```
 
 ### Build as Native App
 
+> **Attention**: Because NiceGui uses PyWebView under the hood. You may need what is described here: [PyWebView Installation](https://pywebview.flowrl.com/guide/installation.html)
+
 Will build the Script into a native binary in subfolder `dist/sonoscontroller`, with PyInstaller.
 
 ```sh
+python3 -m venv venv
+source ./venv/bin/activate
 python3 -m pip install -r requirements.txt
 python3 build.py
 ```
